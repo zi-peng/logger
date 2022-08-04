@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "jjcCCb/mCWDR1MGy4f4NHAKquMEG/UGP8BzZono/N3lHffaw0km6QEJ58T7Sy90PpL0MGBg0sphzIWp+aVgqbg==",
+  "success": true,
+  "projectFilePath": "D:\\StudySpace\\logger\\src\\BuildingBlocks\\Common.Domain.Abstractions\\Common.Domain.Abstractions.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\26575\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\26575\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

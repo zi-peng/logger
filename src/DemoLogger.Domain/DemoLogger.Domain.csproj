@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>Logger.Domain</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BuildingBlocks\Common.Domain.Abstractions\Common.Domain.Abstractions.csproj" />
+      <ProjectReference Include="..\BuildingBlocks\Common.Infrastructure.Core\Common.Infrastructure.Core.csproj" />
+    </ItemGroup>
+
+</Project>

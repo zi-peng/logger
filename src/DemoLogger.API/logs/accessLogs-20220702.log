@@ -1,0 +1,36 @@
+2022-07-02 17:29:58.068 <> [INF] Now listening on: https://localhost:7095
+2022-07-02 17:29:58.085 <> [INF] Now listening on: http://localhost:5095
+2022-07-02 17:29:58.087 <> [INF] Application started. Press Ctrl+C to shut down.
+2022-07-02 17:29:58.088 <> [INF] Hosting environment: Development
+2022-07-02 17:29:58.089 <> [INF] Content root path: D:\StudySpace\logger\src\DemoLogger.API\
+2022-07-02 17:29:58.606 <> [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - -
+2022-07-02 17:29:58.816 <> [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - - - 200 - text/html;charset=utf-8 210.9919ms
+2022-07-02 17:29:58.984 <> [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - -
+2022-07-02 17:29:59.047 <> [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 63.8935ms
+2022-07-02 17:30:01.511 <> [INF] Request starting HTTP/2 GET https://localhost:7095/WeatherForecast - -
+2022-07-02 17:30:01.523 <> [INF] Executing endpoint 'DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API)'
+2022-07-02 17:30:01.532 <> [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[DemoLogger.API.WeatherForecast] Get() on controller DemoLogger.API.Controllers.WeatherForecastController (DemoLogger.API).
+2022-07-02 17:30:01.552 <> [INF] Summaries的值是：Freezing
+2022-07-02 17:30:01.556 <> [INF] WeatherForecast的值是：{"aa":[{"Date":"2022-07-03T17:30:01.5539756+08:00","TemperatureC":-7,"TemperatureF":20,"Summary":"Hot","$type":"WeatherForecast"},{"Date":"2022-07-04T17:30:01.5542490+08:00","TemperatureC":38,"TemperatureF":100,"Summary":"Sweltering","$type":"WeatherForecast"},{"Date":"2022-07-05T17:30:01.5542512+08:00","TemperatureC":44,"TemperatureF":111,"Summary":"Bracing","$type":"WeatherForecast"},{"Date":"2022-07-06T17:30:01.5542513+08:00","TemperatureC":-14,"TemperatureF":7,"Summary":"Bracing","$type":"WeatherForecast"},{"Date":"2022-07-07T17:30:01.5542514+08:00","TemperatureC":31,"TemperatureF":87,"Summary":"Hot","$type":"WeatherForecast"}]}
+2022-07-02 17:30:01.593 <> [INF] Executing ObjectResult, writing value of type 'DemoLogger.API.WeatherForecast[]'.
+2022-07-02 17:30:01.600 <> [INF] Executed action DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API) in 51.2147ms
+2022-07-02 17:30:01.604 <> [INF] Executed endpoint 'DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API)'
+2022-07-02 17:30:01.605 <> [INF] Request finished HTTP/2 GET https://localhost:7095/WeatherForecast - - - 200 - application/json;+charset=utf-8 94.6896ms
+2022-07-02 17:30:42.669 <> [INF] Now listening on: https://localhost:7095
+2022-07-02 17:30:42.685 <> [INF] Now listening on: http://localhost:5095
+2022-07-02 17:30:42.686 <> [INF] Application started. Press Ctrl+C to shut down.
+2022-07-02 17:30:42.687 <> [INF] Hosting environment: Development
+2022-07-02 17:30:42.688 <> [INF] Content root path: D:\StudySpace\logger\src\DemoLogger.API\
+2022-07-02 17:30:43.309 <> [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - -
+2022-07-02 17:30:43.515 <> [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - - - 200 - text/html;charset=utf-8 207.6082ms
+2022-07-02 17:30:43.651 <> [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - -
+2022-07-02 17:30:43.714 <> [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 62.8937ms
+2022-07-02 17:30:46.087 <> [INF] Request starting HTTP/2 GET https://localhost:7095/WeatherForecast - -
+2022-07-02 17:30:46.100 <> [INF] Executing endpoint 'DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API)'
+2022-07-02 17:30:46.107 <> [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[DemoLogger.API.WeatherForecast] Get() on controller DemoLogger.API.Controllers.WeatherForecastController (DemoLogger.API).
+2022-07-02 17:30:46.128 <> [INF] Summaries的值是：Freezing
+2022-07-02 17:30:46.132 <> [INF] WeatherForecast的值是：{"list":[{"Date":"2022-07-03T17:30:46.1300576+08:00","TemperatureC":-3,"TemperatureF":27,"Summary":"Balmy","$type":"WeatherForecast"},{"Date":"2022-07-04T17:30:46.1302422+08:00","TemperatureC":-15,"TemperatureF":6,"Summary":"Chilly","$type":"WeatherForecast"},{"Date":"2022-07-05T17:30:46.1302438+08:00","TemperatureC":43,"TemperatureF":109,"Summary":"Warm","$type":"WeatherForecast"},{"Date":"2022-07-06T17:30:46.1302439+08:00","TemperatureC":1,"TemperatureF":33,"Summary":"Warm","$type":"WeatherForecast"},{"Date":"2022-07-07T17:30:46.1302440+08:00","TemperatureC":-3,"TemperatureF":27,"Summary":"Chilly","$type":"WeatherForecast"}]}
+2022-07-02 17:30:46.178 <> [INF] Executing ObjectResult, writing value of type 'DemoLogger.API.WeatherForecast[]'.
+2022-07-02 17:30:46.186 <> [INF] Executed action DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API) in 63.5457ms
+2022-07-02 17:30:46.190 <> [INF] Executed endpoint 'DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API)'
+2022-07-02 17:30:46.193 <> [INF] Request finished HTTP/2 GET https://localhost:7095/WeatherForecast - - - 200 - application/json;+charset=utf-8 105.4797ms

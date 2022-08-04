@@ -1,0 +1,414 @@
+2022-08-03 17:56:09.172 <> [INF] Starting default Dispatcher
+2022-08-03 17:56:09.277 <> [INF] Starting the processing server.
+2022-08-03 17:56:09.296 <> [INF] RabbitMQ consumer registered. --> amq.ctag-2Pefw90WDvWEjCiRh1tYIg
+2022-08-03 17:56:09.319 <> [INF] ### CAP started!
+2022-08-03 17:56:09.487 <> [INF] Now listening on: https://localhost:7095
+2022-08-03 17:56:09.488 <> [INF] Now listening on: http://localhost:5095
+2022-08-03 17:56:09.489 <> [INF] Application started. Press Ctrl+C to shut down.
+2022-08-03 17:56:09.490 <> [INF] Hosting environment: Development
+2022-08-03 17:56:09.491 <> [INF] Content root path: D:\StudySpace\logger\src\DemoLogger.API\
+2022-08-03 17:56:10.217 <> [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - -
+2022-08-03 17:56:10.323 <> [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - - - 200 - text/html;charset=utf-8 107.3895ms
+2022-08-03 17:56:10.410 <> [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - -
+2022-08-03 17:56:10.481 <> [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 70.4279ms
+2022-08-03 17:57:17.305 <> [INF] Starting default Dispatcher
+2022-08-03 17:57:17.386 <> [INF] Starting the processing server.
+2022-08-03 17:57:17.397 <> [INF] RabbitMQ consumer registered. --> amq.ctag-_mxvAQorTUoeRbwz7JIalA
+2022-08-03 17:57:17.425 <> [INF] ### CAP started!
+2022-08-03 17:57:17.531 <> [INF] Now listening on: https://localhost:7095
+2022-08-03 17:57:17.532 <> [INF] Now listening on: http://localhost:5095
+2022-08-03 17:57:17.536 <> [INF] Application started. Press Ctrl+C to shut down.
+2022-08-03 17:57:17.537 <> [INF] Hosting environment: Development
+2022-08-03 17:57:17.537 <> [INF] Content root path: D:\StudySpace\logger\src\DemoLogger.API\
+2022-08-03 17:57:18.065 <> [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - -
+2022-08-03 17:57:18.132 <> [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - - - 200 - text/html;charset=utf-8 68.3293ms
+2022-08-03 17:57:18.207 <> [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - -
+2022-08-03 17:57:18.259 <> [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 52.0368ms
+2022-08-03 17:58:09.248 <> [INF] Request starting HTTP/2 GET https://localhost:7095/WeatherForecast - -
+2022-08-03 17:58:09.263 <> [INF] Executing endpoint 'DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API)'
+2022-08-03 17:58:09.274 <> [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[DemoLogger.API.WeatherForecast]] Get() on controller DemoLogger.API.Controllers.WeatherForecastController (DemoLogger.API).
+2022-08-03 17:58:20.839 <> [INF] Entity Framework Core 6.0.7 initialized 'LoggerContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.29-mysql 
+2022-08-03 17:58:24.001 <> [INF] ==========开始事务"50dbbc9a-9cdc-4e90-a879-7619876f75a1"|Type:AddLoggInfoCommand|Request: {"Title":"标题","Content":"内容","$type":"AddLoggInfoCommand"}=============
+2022-08-03 17:59:08.735 <> [ERR] 处理事务出错 AddLoggInfoCommand ({"Title":"标题","Content":"内容","$type":"AddLoggInfoCommand"})
+System.InvalidOperationException: Error constructing handler for request of type MediatR.IRequestHandler`2[DemoLogger.Application.Commands.AddLoggInfoCommand,System.Boolean]. Register your handlers with the container. See the samples in GitHub for examples.
+ ---> System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[DemoLogger.Application.Commands.AddLoggInfoCommand,System.Boolean]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at MediatR.ServiceFactoryExtensions.GetInstance[T](ServiceFactory factory)
+   at MediatR.Wrappers.HandlerBase.GetHandler[THandler](ServiceFactory factory)
+   --- End of inner exception stack trace ---
+   at MediatR.Wrappers.HandlerBase.GetHandler[THandler](ServiceFactory factory)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Common.Infrastructure.Core.Behavior.TransactionBehavior`3.<>c__DisplayClass3_0.<<Handle>b__0>d.MoveNext() in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\TransactionBehavior.cs:line 50
+--- End of stack trace from previous location ---
+   at Common.Infrastructure.Core.Behavior.TransactionBehavior`3.<>c__DisplayClass3_0.<<Handle>b__0>d.MoveNext() in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\TransactionBehavior.cs:line 56
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c.<<ExecuteAsync>b__3_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass33_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Common.Infrastructure.Core.Behavior.TransactionBehavior`3.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\TransactionBehavior.cs:line 41
+2022-08-03 17:59:08.867 <> [ERR] ERROR Handling for DemoLogger.Application.Commands.AddLoggInfoCommand ({"Title":"标题","Content":"内容","$type":"AddLoggInfoCommand"})
+System.InvalidOperationException: Error constructing handler for request of type MediatR.IRequestHandler`2[DemoLogger.Application.Commands.AddLoggInfoCommand,System.Boolean]. Register your handlers with the container. See the samples in GitHub for examples.
+ ---> System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[DemoLogger.Application.Commands.AddLoggInfoCommand,System.Boolean]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at MediatR.ServiceFactoryExtensions.GetInstance[T](ServiceFactory factory)
+   at MediatR.Wrappers.HandlerBase.GetHandler[THandler](ServiceFactory factory)
+   --- End of inner exception stack trace ---
+   at MediatR.Wrappers.HandlerBase.GetHandler[THandler](ServiceFactory factory)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Common.Infrastructure.Core.Behavior.TransactionBehavior`3.<>c__DisplayClass3_0.<<Handle>b__0>d.MoveNext() in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\TransactionBehavior.cs:line 50
+--- End of stack trace from previous location ---
+   at Common.Infrastructure.Core.Behavior.TransactionBehavior`3.<>c__DisplayClass3_0.<<Handle>b__0>d.MoveNext() in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\TransactionBehavior.cs:line 56
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c.<<ExecuteAsync>b__3_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass33_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Common.Infrastructure.Core.Behavior.TransactionBehavior`3.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\TransactionBehavior.cs:line 41
+   at Common.Infrastructure.Core.Behavior.Exceptions.ExceptionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\Exceptions\ExceptionBehaviour.cs:line 29
+2022-08-03 17:59:08.930 <> [INF] Executed action DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API) in 59642.9422ms
+2022-08-03 17:59:08.932 <> [INF] Executed endpoint 'DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API)'
+2022-08-03 17:59:08.935 <> [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Error constructing handler for request of type MediatR.IRequestHandler`2[DemoLogger.Application.Commands.AddLoggInfoCommand,System.Boolean]. Register your handlers with the container. See the samples in GitHub for examples.
+ ---> System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[DemoLogger.Application.Commands.AddLoggInfoCommand,System.Boolean]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at MediatR.ServiceFactoryExtensions.GetInstance[T](ServiceFactory factory)
+   at MediatR.Wrappers.HandlerBase.GetHandler[THandler](ServiceFactory factory)
+   --- End of inner exception stack trace ---
+   at MediatR.Wrappers.HandlerBase.GetHandler[THandler](ServiceFactory factory)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Common.Infrastructure.Core.Behavior.TransactionBehavior`3.<>c__DisplayClass3_0.<<Handle>b__0>d.MoveNext() in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\TransactionBehavior.cs:line 50
+--- End of stack trace from previous location ---
+   at Common.Infrastructure.Core.Behavior.TransactionBehavior`3.<>c__DisplayClass3_0.<<Handle>b__0>d.MoveNext() in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\TransactionBehavior.cs:line 56
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c.<<ExecuteAsync>b__3_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass33_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Common.Infrastructure.Core.Behavior.TransactionBehavior`3.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\TransactionBehavior.cs:line 41
+   at Common.Infrastructure.Core.Behavior.Exceptions.ExceptionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\Exceptions\ExceptionBehaviour.cs:line 29
+   at DemoLogger.API.Controllers.WeatherForecastController.Get() in D:\StudySpace\logger\src\DemoLogger.API\Controllers\WeatherForecastController.cs:line 33
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-03 17:59:08.962 <> [INF] Request finished HTTP/2 GET https://localhost:7095/WeatherForecast - - - 500 - text/plain;+charset=utf-8 59714.6049ms
+2022-08-03 17:59:10.796 <> [INF] Request starting HTTP/2 GET https://localhost:7095/WeatherForecast - -
+2022-08-03 17:59:10.802 <> [INF] Executing endpoint 'DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API)'
+2022-08-03 17:59:10.803 <> [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[DemoLogger.API.WeatherForecast]] Get() on controller DemoLogger.API.Controllers.WeatherForecastController (DemoLogger.API).
+2022-08-03 17:59:17.991 <> [INF] Entity Framework Core 6.0.7 initialized 'LoggerContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.29-mysql 
+2022-08-03 17:59:18.004 <> [INF] ==========开始事务"1384c13b-f12b-4a35-8c29-ff686528a0cc"|Type:AddLoggInfoCommand|Request: {"Title":"标题","Content":"内容","$type":"AddLoggInfoCommand"}=============
+2022-08-03 17:59:18.057 <> [ERR] 处理事务出错 AddLoggInfoCommand ({"Title":"标题","Content":"内容","$type":"AddLoggInfoCommand"})
+System.InvalidOperationException: Error constructing handler for request of type MediatR.IRequestHandler`2[DemoLogger.Application.Commands.AddLoggInfoCommand,System.Boolean]. Register your handlers with the container. See the samples in GitHub for examples.
+ ---> System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[DemoLogger.Application.Commands.AddLoggInfoCommand,System.Boolean]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at MediatR.ServiceFactoryExtensions.GetInstance[T](ServiceFactory factory)
+   at MediatR.Wrappers.HandlerBase.GetHandler[THandler](ServiceFactory factory)
+   --- End of inner exception stack trace ---
+   at MediatR.Wrappers.HandlerBase.GetHandler[THandler](ServiceFactory factory)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Common.Infrastructure.Core.Behavior.TransactionBehavior`3.<>c__DisplayClass3_0.<<Handle>b__0>d.MoveNext() in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\TransactionBehavior.cs:line 50
+--- End of stack trace from previous location ---
+   at Common.Infrastructure.Core.Behavior.TransactionBehavior`3.<>c__DisplayClass3_0.<<Handle>b__0>d.MoveNext() in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\TransactionBehavior.cs:line 56
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c.<<ExecuteAsync>b__3_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass33_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Common.Infrastructure.Core.Behavior.TransactionBehavior`3.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\TransactionBehavior.cs:line 41
+2022-08-03 17:59:18.101 <> [ERR] ERROR Handling for DemoLogger.Application.Commands.AddLoggInfoCommand ({"Title":"标题","Content":"内容","$type":"AddLoggInfoCommand"})
+System.InvalidOperationException: Error constructing handler for request of type MediatR.IRequestHandler`2[DemoLogger.Application.Commands.AddLoggInfoCommand,System.Boolean]. Register your handlers with the container. See the samples in GitHub for examples.
+ ---> System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[DemoLogger.Application.Commands.AddLoggInfoCommand,System.Boolean]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at MediatR.ServiceFactoryExtensions.GetInstance[T](ServiceFactory factory)
+   at MediatR.Wrappers.HandlerBase.GetHandler[THandler](ServiceFactory factory)
+   --- End of inner exception stack trace ---
+   at MediatR.Wrappers.HandlerBase.GetHandler[THandler](ServiceFactory factory)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Common.Infrastructure.Core.Behavior.TransactionBehavior`3.<>c__DisplayClass3_0.<<Handle>b__0>d.MoveNext() in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\TransactionBehavior.cs:line 50
+--- End of stack trace from previous location ---
+   at Common.Infrastructure.Core.Behavior.TransactionBehavior`3.<>c__DisplayClass3_0.<<Handle>b__0>d.MoveNext() in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\TransactionBehavior.cs:line 56
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c.<<ExecuteAsync>b__3_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass33_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Common.Infrastructure.Core.Behavior.TransactionBehavior`3.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\TransactionBehavior.cs:line 41
+   at Common.Infrastructure.Core.Behavior.Exceptions.ExceptionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\Exceptions\ExceptionBehaviour.cs:line 29
+2022-08-03 17:59:18.150 <> [INF] Executed action DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API) in 7337.6613ms
+2022-08-03 17:59:18.152 <> [INF] Executed endpoint 'DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API)'
+2022-08-03 17:59:18.153 <> [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Error constructing handler for request of type MediatR.IRequestHandler`2[DemoLogger.Application.Commands.AddLoggInfoCommand,System.Boolean]. Register your handlers with the container. See the samples in GitHub for examples.
+ ---> System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[DemoLogger.Application.Commands.AddLoggInfoCommand,System.Boolean]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at MediatR.ServiceFactoryExtensions.GetInstance[T](ServiceFactory factory)
+   at MediatR.Wrappers.HandlerBase.GetHandler[THandler](ServiceFactory factory)
+   --- End of inner exception stack trace ---
+   at MediatR.Wrappers.HandlerBase.GetHandler[THandler](ServiceFactory factory)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestExceptionActionProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPostProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at MediatR.Pipeline.RequestPreProcessorBehavior`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next)
+   at Common.Infrastructure.Core.Behavior.TransactionBehavior`3.<>c__DisplayClass3_0.<<Handle>b__0>d.MoveNext() in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\TransactionBehavior.cs:line 50
+--- End of stack trace from previous location ---
+   at Common.Infrastructure.Core.Behavior.TransactionBehavior`3.<>c__DisplayClass3_0.<<Handle>b__0>d.MoveNext() in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\TransactionBehavior.cs:line 56
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c.<<ExecuteAsync>b__3_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass33_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Common.Infrastructure.Core.Behavior.TransactionBehavior`3.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\TransactionBehavior.cs:line 41
+   at Common.Infrastructure.Core.Behavior.Exceptions.ExceptionBehaviour`2.Handle(TRequest request, CancellationToken cancellationToken, RequestHandlerDelegate`1 next) in D:\StudySpace\logger\src\BuildingBlocks\Common.Infrastructure.Core\Behavior\Exceptions\ExceptionBehaviour.cs:line 29
+   at DemoLogger.API.Controllers.WeatherForecastController.Get() in D:\StudySpace\logger\src\DemoLogger.API\Controllers\WeatherForecastController.cs:line 33
+   at lambda_method5(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-03 17:59:18.169 <> [INF] Request finished HTTP/2 GET https://localhost:7095/WeatherForecast - - - 500 - text/plain;+charset=utf-8 7373.1131ms
+2022-08-03 18:00:54.999 <> [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MediatR.IRequestHandler`2[DemoLogger.Application.Commands.AddLoggInfoCommand,System.Boolean] Lifetime: Transient ImplementationType: DemoLogger.Application.Commands.AddLoggInfoCommandHandler': Unable to resolve service for type 'Logger.Domain.Aggregates.Logger.ILoggerInfoRepository' while attempting to activate 'DemoLogger.Application.Commands.AddLoggInfoCommandHandler'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MediatR.IRequestHandler`2[DemoLogger.Application.Commands.AddLoggInfoCommand,System.Boolean] Lifetime: Transient ImplementationType: DemoLogger.Application.Commands.AddLoggInfoCommandHandler': Unable to resolve service for type 'Logger.Domain.Aggregates.Logger.ILoggerInfoRepository' while attempting to activate 'DemoLogger.Application.Commands.AddLoggInfoCommandHandler'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'Logger.Domain.Aggregates.Logger.ILoggerInfoRepository' while attempting to activate 'DemoLogger.Application.Commands.AddLoggInfoCommandHandler'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\StudySpace\logger\src\DemoLogger.API\Program.cs:line 26
+2022-08-03 18:03:47.340 <> [FTL] Host terminated unexpectedly
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MediatR.IRequestHandler`2[DemoLogger.Application.Commands.AddLoggInfoCommand,System.Boolean] Lifetime: Transient ImplementationType: DemoLogger.Application.Commands.AddLoggInfoCommandHandler': Unable to resolve service for type 'Logger.Domain.Aggregates.Logger.ILoggerInfoRepository' while attempting to activate 'DemoLogger.Application.Commands.AddLoggInfoCommandHandler'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: MediatR.IRequestHandler`2[DemoLogger.Application.Commands.AddLoggInfoCommand,System.Boolean] Lifetime: Transient ImplementationType: DemoLogger.Application.Commands.AddLoggInfoCommandHandler': Unable to resolve service for type 'Logger.Domain.Aggregates.Logger.ILoggerInfoRepository' while attempting to activate 'DemoLogger.Application.Commands.AddLoggInfoCommandHandler'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'Logger.Domain.Aggregates.Logger.ILoggerInfoRepository' while attempting to activate 'DemoLogger.Application.Commands.AddLoggInfoCommandHandler'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\StudySpace\logger\src\DemoLogger.API\Program.cs:line 26
+2022-08-03 18:04:51.207 <> [INF] Starting default Dispatcher
+2022-08-03 18:04:51.284 <> [INF] Starting the processing server.
+2022-08-03 18:04:51.296 <> [INF] RabbitMQ consumer registered. --> amq.ctag-yjYChLPZMBKNLXLhAN9f-A
+2022-08-03 18:04:51.325 <> [INF] ### CAP started!
+2022-08-03 18:04:51.435 <> [INF] Now listening on: https://localhost:7095
+2022-08-03 18:04:51.436 <> [INF] Now listening on: http://localhost:5095
+2022-08-03 18:04:51.438 <> [INF] Application started. Press Ctrl+C to shut down.
+2022-08-03 18:04:51.439 <> [INF] Hosting environment: Development
+2022-08-03 18:04:51.439 <> [INF] Content root path: D:\StudySpace\logger\src\DemoLogger.API\
+2022-08-03 18:04:51.894 <> [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - -
+2022-08-03 18:04:51.956 <> [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - - - 200 - text/html;charset=utf-8 63.6604ms
+2022-08-03 18:04:52.030 <> [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - -
+2022-08-03 18:04:52.080 <> [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 50.4400ms
+2022-08-03 18:11:46.622 <> [INF] Starting default Dispatcher
+2022-08-03 18:11:46.706 <> [INF] Starting the processing server.
+2022-08-03 18:11:46.719 <> [INF] RabbitMQ consumer registered. --> amq.ctag-0XkRaz4Qit53MBgpxzAa5A
+2022-08-03 18:11:46.749 <> [INF] ### CAP started!
+2022-08-03 18:11:46.869 <> [INF] Now listening on: https://localhost:7095
+2022-08-03 18:11:46.870 <> [INF] Now listening on: http://localhost:5095
+2022-08-03 18:11:46.873 <> [INF] Application started. Press Ctrl+C to shut down.
+2022-08-03 18:11:46.873 <> [INF] Hosting environment: Development
+2022-08-03 18:11:46.874 <> [INF] Content root path: D:\StudySpace\logger\src\DemoLogger.API\
+2022-08-03 18:11:47.263 <> [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - -
+2022-08-03 18:11:47.342 <> [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - - - 200 - text/html;charset=utf-8 80.2232ms
+2022-08-03 18:11:47.419 <> [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - -
+2022-08-03 18:11:47.471 <> [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 52.2964ms
+2022-08-03 18:11:53.170 <> [INF] Request starting HTTP/2 GET https://localhost:7095/WeatherForecast - -
+2022-08-03 18:11:53.182 <> [INF] Executing endpoint 'DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API)'
+2022-08-03 18:11:53.194 <> [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[DemoLogger.API.WeatherForecast]] Get() on controller DemoLogger.API.Controllers.WeatherForecastController (DemoLogger.API).
+2022-08-03 18:12:04.280 <> [INF] Entity Framework Core 6.0.7 initialized 'LoggerContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.29-mysql 
+2022-08-03 18:12:04.346 <> [INF] ==========开始事务"bdffd358-709e-4a12-98bc-87dea0e39bf3"|Type:AddLoggInfoCommand|Request: {"Title":"标题","Content":"内容","$type":"AddLoggInfoCommand"}=============
+2022-08-03 18:12:20.740 <> [INF] ==========提交事务"bdffd358-709e-4a12-98bc-87dea0e39bf3"=============
+2022-08-03 18:12:20.860 <> [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `logger` (`Content`, `Title`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `logger`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2022-08-03 18:12:20.927 <> [INF] Summaries的值是：Freezing
+2022-08-03 18:12:20.929 <> [INF] WeatherForecast的值是：{"list":[{"Date":"2022-08-04T18:12:20.9292264+08:00","TemperatureC":27,"TemperatureF":80,"Summary":"Chilly","$type":"WeatherForecast"},{"Date":"2022-08-05T18:12:20.9294561+08:00","TemperatureC":12,"TemperatureF":53,"Summary":"Hot","$type":"WeatherForecast"},{"Date":"2022-08-06T18:12:20.9294579+08:00","TemperatureC":-14,"TemperatureF":7,"Summary":"Warm","$type":"WeatherForecast"},{"Date":"2022-08-07T18:12:20.9294580+08:00","TemperatureC":49,"TemperatureF":120,"Summary":"Balmy","$type":"WeatherForecast"},{"Date":"2022-08-08T18:12:20.9294581+08:00","TemperatureC":9,"TemperatureF":48,"Summary":"Freezing","$type":"WeatherForecast"}]}
+2022-08-03 18:12:20.959 <> [INF] Executing ObjectResult, writing value of type 'DemoLogger.API.WeatherForecast[]'.
+2022-08-03 18:12:20.968 <> [INF] Executed action DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API) in 27759.71ms
+2022-08-03 18:12:20.970 <> [INF] Executed endpoint 'DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API)'
+2022-08-03 18:12:20.976 <> [INF] Request finished HTTP/2 GET https://localhost:7095/WeatherForecast - - - 200 - application/json;+charset=utf-8 27805.5487ms
+2022-08-03 18:12:56.813 <> [INF] Request starting HTTP/2 GET https://localhost:7095/WeatherForecast - -
+2022-08-03 18:12:56.819 <> [INF] Executing endpoint 'DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API)'
+2022-08-03 18:12:56.820 <> [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[DemoLogger.API.WeatherForecast]] Get() on controller DemoLogger.API.Controllers.WeatherForecastController (DemoLogger.API).
+2022-08-03 18:13:02.493 <> [INF] Entity Framework Core 6.0.7 initialized 'LoggerContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.29-mysql 
+2022-08-03 18:13:02.507 <> [INF] ==========开始事务"341a8f9a-fce9-4443-947d-5c42f65b7747"|Type:AddLoggInfoCommand|Request: {"Title":"标题","Content":"内容","$type":"AddLoggInfoCommand"}=============
+2022-08-03 18:13:03.559 <> [INF] ==========提交事务"341a8f9a-fce9-4443-947d-5c42f65b7747"=============
+2022-08-03 18:13:03.571 <> [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `logger` (`Content`, `Title`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `logger`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2022-08-03 18:13:03.602 <> [INF] Summaries的值是：Freezing
+2022-08-03 18:13:03.602 <> [INF] WeatherForecast的值是：{"list":[{"Date":"2022-08-04T18:13:03.6027849+08:00","TemperatureC":25,"TemperatureF":76,"Summary":"Hot","$type":"WeatherForecast"},{"Date":"2022-08-05T18:13:03.6027868+08:00","TemperatureC":9,"TemperatureF":48,"Summary":"Sweltering","$type":"WeatherForecast"},{"Date":"2022-08-06T18:13:03.6027869+08:00","TemperatureC":54,"TemperatureF":129,"Summary":"Freezing","$type":"WeatherForecast"},{"Date":"2022-08-07T18:13:03.6027870+08:00","TemperatureC":17,"TemperatureF":62,"Summary":"Mild","$type":"WeatherForecast"},{"Date":"2022-08-08T18:13:03.6027871+08:00","TemperatureC":36,"TemperatureF":96,"Summary":"Sweltering","$type":"WeatherForecast"}]}
+2022-08-03 18:13:03.620 <> [INF] Executing ObjectResult, writing value of type 'DemoLogger.API.WeatherForecast[]'.
+2022-08-03 18:13:03.622 <> [INF] Executed action DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API) in 6795.04ms
+2022-08-03 18:13:03.623 <> [INF] Executed endpoint 'DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API)'
+2022-08-03 18:13:03.625 <> [INF] Request finished HTTP/2 GET https://localhost:7095/WeatherForecast - - - 200 - application/json;+charset=utf-8 6812.2610ms
+2022-08-03 18:19:02.579 <> [INF] Starting default Dispatcher
+2022-08-03 18:19:02.660 <> [INF] Starting the processing server.
+2022-08-03 18:19:02.672 <> [INF] RabbitMQ consumer registered. --> amq.ctag-Mvj_xOXX-t2OQa78H4T_qg
+2022-08-03 18:19:02.701 <> [INF] ### CAP started!
+2022-08-03 18:19:02.814 <> [INF] Now listening on: https://localhost:7095
+2022-08-03 18:19:02.815 <> [INF] Now listening on: http://localhost:5095
+2022-08-03 18:19:02.817 <> [INF] Application started. Press Ctrl+C to shut down.
+2022-08-03 18:19:02.818 <> [INF] Hosting environment: Development
+2022-08-03 18:19:02.819 <> [INF] Content root path: D:\StudySpace\logger\src\DemoLogger.API\
+2022-08-03 18:19:03.167 <> [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - -
+2022-08-03 18:19:03.232 <> [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - - - 200 - text/html;charset=utf-8 67.0344ms
+2022-08-03 18:19:03.306 <> [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - -
+2022-08-03 18:19:03.360 <> [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 54.1320ms
+2022-08-03 18:19:05.466 <> [INF] Request starting HTTP/2 GET https://localhost:7095/WeatherForecast - -
+2022-08-03 18:19:05.476 <> [INF] Executing endpoint 'DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API)'
+2022-08-03 18:19:05.488 <> [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[DemoLogger.API.WeatherForecast]] Get() on controller DemoLogger.API.Controllers.WeatherForecastController (DemoLogger.API).
+2022-08-03 18:19:11.863 <> [INF] Entity Framework Core 6.0.7 initialized 'LoggerContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.29-mysql 
+2022-08-03 18:19:11.923 <> [INF] ==========开始事务"7852d8cb-fb36-4060-9c1a-38f4d1796172"|Type:AddLoggInfoCommand|Request: {"Title":"标题","Content":"内容","$type":"AddLoggInfoCommand"}=============
+2022-08-03 18:19:13.682 <> [INF] ==========提交事务"7852d8cb-fb36-4060-9c1a-38f4d1796172"=============
+2022-08-03 18:19:13.755 <> [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `logger` (`Content`, `Title`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `logger`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2022-08-03 18:19:19.209 <> [INF] Summaries的值是：Freezing
+2022-08-03 18:19:19.211 <> [INF] WeatherForecast的值是：{"list":[{"Date":"2022-08-04T18:19:19.2106981+08:00","TemperatureC":45,"TemperatureF":112,"Summary":"Freezing","$type":"WeatherForecast"},{"Date":"2022-08-05T18:19:19.2109077+08:00","TemperatureC":48,"TemperatureF":118,"Summary":"Hot","$type":"WeatherForecast"},{"Date":"2022-08-06T18:19:19.2109098+08:00","TemperatureC":48,"TemperatureF":118,"Summary":"Hot","$type":"WeatherForecast"},{"Date":"2022-08-07T18:19:19.2109099+08:00","TemperatureC":25,"TemperatureF":76,"Summary":"Cool","$type":"WeatherForecast"},{"Date":"2022-08-08T18:19:19.2109100+08:00","TemperatureC":18,"TemperatureF":64,"Summary":"Freezing","$type":"WeatherForecast"}]}
+2022-08-03 18:19:19.222 <> [INF] CAP message 'test.sendLogger' published, internal id '5126614709827575809'
+2022-08-03 18:19:19.240 <> [INF] Executing ObjectResult, writing value of type 'DemoLogger.API.WeatherForecast[]'.
+2022-08-03 18:19:19.247 <> [INF] Executed action DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API) in 13745.4176ms
+2022-08-03 18:19:19.250 <> [INF] Executed endpoint 'DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API)'
+2022-08-03 18:19:19.256 <> [INF] Request finished HTTP/2 GET https://localhost:7095/WeatherForecast - - - 200 - application/json;+charset=utf-8 13789.9440ms
+2022-08-03 18:19:19.258 <> [INF] Executing subscriber method 'SubscriberService.CheckReceivedMessage' on group 'cap.queue.demologger.api.v1'
+2022-08-03 18:19:19.264 <> [INF] 标题是{"Content":"内容","Title":"标题","Id":0,"DomainEvents":null,"$type":"LoggerInfo"}
+2022-08-03 18:19:19.316 <> [INF] Executed subscriber method 'SubscriberService.CheckReceivedMessage' on group 'cap.queue.demologger.api.v1' in 9.3331 ms
+2022-08-03 20:11:49.435 <> [INF] Starting default Dispatcher
+2022-08-03 20:11:49.516 <> [INF] Starting the processing server.
+2022-08-03 20:11:49.527 <> [INF] RabbitMQ consumer registered. --> amq.ctag-OO4EvP2aP5R9BKSS5-khBg
+2022-08-03 20:11:49.558 <> [INF] ### CAP started!
+2022-08-03 20:11:49.678 <> [INF] Now listening on: https://localhost:7095
+2022-08-03 20:11:49.679 <> [INF] Now listening on: http://localhost:5095
+2022-08-03 20:11:49.680 <> [INF] Application started. Press Ctrl+C to shut down.
+2022-08-03 20:11:49.681 <> [INF] Hosting environment: Development
+2022-08-03 20:11:49.681 <> [INF] Content root path: D:\StudySpace\logger\src\DemoLogger.API\
+2022-08-03 20:11:50.085 <> [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - -
+2022-08-03 20:11:50.150 <> [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - - - 200 - text/html;charset=utf-8 65.6299ms
+2022-08-03 20:11:50.227 <> [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - -
+2022-08-03 20:11:50.292 <> [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 64.2181ms
+2022-08-03 20:11:52.771 <> [INF] Request starting HTTP/2 GET https://localhost:7095/WeatherForecast - -
+2022-08-03 20:11:52.782 <> [INF] Executing endpoint 'DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API)'
+2022-08-03 20:11:52.793 <> [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[DemoLogger.API.WeatherForecast]] Get() on controller DemoLogger.API.Controllers.WeatherForecastController (DemoLogger.API).
+2022-08-03 20:12:06.959 <> [INF] Entity Framework Core 6.0.7 initialized 'LoggerContext' using provider 'Pomelo.EntityFrameworkCore.MySql:6.0.2' with options: ServerVersion 8.0.29-mysql 
+2022-08-03 20:12:07.020 <> [INF] ==========开始事务"faa9f9e1-5873-4949-8c05-53638d9f1872"|Type:AddLoggInfoCommand|Request: {"Title":"标题","Content":"内容","$type":"AddLoggInfoCommand"}=============
+2022-08-03 20:12:16.754 <> [INF] ==========提交事务"faa9f9e1-5873-4949-8c05-53638d9f1872"=============
+2022-08-03 20:12:16.827 <> [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (Size = 30), @p1='?' (Size = 20)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `logger` (`Content`, `Title`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `logger`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2022-08-03 20:12:20.615 <> [INF] Summaries的值是：Freezing
+2022-08-03 20:12:20.616 <> [INF] WeatherForecast的值是：{"list":[{"Date":"2022-08-04T20:12:20.6159952+08:00","TemperatureC":54,"TemperatureF":129,"Summary":"Scorching","$type":"WeatherForecast"},{"Date":"2022-08-05T20:12:20.6162101+08:00","TemperatureC":-12,"TemperatureF":11,"Summary":"Freezing","$type":"WeatherForecast"},{"Date":"2022-08-06T20:12:20.6162118+08:00","TemperatureC":21,"TemperatureF":69,"Summary":"Sweltering","$type":"WeatherForecast"},{"Date":"2022-08-07T20:12:20.6162120+08:00","TemperatureC":25,"TemperatureF":76,"Summary":"Cool","$type":"WeatherForecast"},{"Date":"2022-08-08T20:12:20.6162121+08:00","TemperatureC":4,"TemperatureF":39,"Summary":"Bracing","$type":"WeatherForecast"}]}
+2022-08-03 20:12:20.627 <> [INF] CAP message 'test.sendLogger' published, internal id '5126614737608187905'
+2022-08-03 20:12:20.647 <> [INF] Executing ObjectResult, writing value of type 'DemoLogger.API.WeatherForecast[]'.
+2022-08-03 20:12:20.654 <> [INF] Executed action DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API) in 27851.9703ms
+2022-08-03 20:12:20.658 <> [INF] Executed endpoint 'DemoLogger.API.Controllers.WeatherForecastController.Get (DemoLogger.API)'
+2022-08-03 20:12:20.663 <> [INF] Request finished HTTP/2 GET https://localhost:7095/WeatherForecast - - - 200 - application/json;+charset=utf-8 27891.7268ms
+2022-08-03 20:12:20.666 <> [INF] Executing subscriber method 'SubscriberService.CheckReceivedMessage' on group 'cap.queue.demologger.api.v1'
+2022-08-03 20:12:22.228 <> [INF] 标题是{"Content":"内容","Title":"标题","Id":0,"DomainEvents":null,"$type":"LoggerInfo"}
+2022-08-03 20:12:23.478 <> [INF] Executed subscriber method 'SubscriberService.CheckReceivedMessage' on group 'cap.queue.demologger.api.v1' in 2792.89 ms
